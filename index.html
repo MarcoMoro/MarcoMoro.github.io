@@ -2,11 +2,14 @@
 <html lang="de">
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="assets/style/main.css">
 		<link rel="icon" type="image/x-icon" href="assets/image/favicon.ico">
 		<link rel="canonical" href="https://marcomoro.ch" />
 		<link rel="canonical" href="http://www.marcomoro.ch" />
 		<link rel="canonical" href="http://marcomoro.ch" />
+		<link rel="preload" href="assets/style/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="assets/style/main.css">
+		</noscript>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta http-equiv="Cache-control" content="public">
@@ -16,8 +19,8 @@
 		<meta name="keywords" content="marcomoro, moro, itsupport, servicenow, instructor, photography">
 	</head>
 	<body>
-		<div class="information">
-            <img class="photo" src="assets/image/photo.webp" alt="MM by AI" />
+		<div class="information" role="main">
+            <img class="photo" src="assets/image/photo.webp" width="200px" height="250px" alt="MM by AI" fetchpriority="high" />
             <div class="name">Marco Moro</div>
             <div class="subheading">Solution Architect & Developer | ÜK-Instruktor</div>
 			<div class="description">Neben den beruflichen Herausforderungen geniesse ich die Zeit in der Natur mit Fotografieren oder sportlichen Aktivitäten wie Jogging, Wandern oder Motorradfahren.</div>
@@ -44,7 +47,7 @@
 				</a>
 			</div>
         </div>
-        <footer>
+        <footer role="contentinfo">
             <div class="footer-text">© Copyright | Marco Moro</div>
         </footer>
 	</body>
